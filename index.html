@@ -4,66 +4,34 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Fardous Yousuf | Portfolio</title>
-  <style>
-     :root {
-  --main: #2ecc71;     /* Cagaar iftiimaya */
-  --soft: #1db954;     /* Cagaar waxyar madow ah */
-  --dark: #000000;     /* Madow dhab ah */
-  --glass: rgba(255, 255, 255, 0.05); /* Kaararka si ay madowga uga dhex muuqdaan */
-}
 
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  <!-- Font Awesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+  <style>
+    :root {
+      --main: #6c5ce7;
+      --soft: #a29bfe;
+      --dark: #341f97;
+      --glass: rgba(255, 255, 255, 0.18);
     }
 
-  body {
-    margin: 0;
-    padding: 0;
-    width: 100%;
-    min-height: 100vh;
-    color: #fff;
-    scroll-behavior: smooth;
-    /* Midabka Madowga u badan laakiin Cagaarka leh */
+    * {
+      box-sizing: border-box;
+    }
+
     body {
-  background: linear-gradient(180deg, #0b1f2a, #07151d);
-}
-    background-size: 400% 400%;
-    animation: gradientMove 10s ease infinite;
-}
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: linear-gradient(135deg, #1e1e2f, #3a3a6a);
+      min-height: 100vh;
+      color: #fff;
+    }
 
-@keyframes gradientMove {
-    0% { background-position: 0% 50%; }
-    50% { background-position: 100% 50%; }
-    100% { background-position: 0% 50%; }
-}
-
-/* Koodhka dhaqaajinaya midabada */
-@keyframes gradientMove {
-    0% { background-position: 0% 50%; }
-    50% { background-position: 100% 50%; }
-    100% { background-position: 0% 50%; }
-}
-
-@keyframes gradientMove {
-    0% { background-position: 0% 50%; }
-    50% { background-position: 100% 50%; }
-    100% { background-position: 0% 50%; }
-}
-
-/* Dhaqdhaqaaqa midabada */
-@keyframes gradientMove {
-    0% { background-position: 0% 50%; }
-    50% { background-position: 100% 50%; }
-    100% { background-position: 0% 50%; }
-}
-
-    /* ===== HERO PROFILE ===== */
+    /* ===== HERO ===== */
     .hero {
       text-align: center;
-      padding: 90px 20px 60px;
+      padding: 70px 20px 50px;
     }
 
     .hero img {
@@ -88,23 +56,20 @@
     /* ===== NAV ===== */
     nav {
       position: sticky;
-      top: 20px;
+      top: 15px;
       margin: 0 auto 40px;
       width: fit-content;
-      background: rgba(255, 255, 255, 0.1);
+      background: var(--glass);
       backdrop-filter: blur(14px);
       padding: 12px 30px;
       border-radius: 30px;
-      border: 1px solid rgba(255, 255, 255, 0.1);
-      z-index: 1000;
     }
 
     nav a {
-      color: white;
+      color: #fff;
       text-decoration: none;
-      margin: 0 15px;
-      font-weight: 500;
-      transition: 0.3s;
+      margin: 0 10px;
+      font-size: 15px;
     }
 
     nav a:hover {
@@ -123,19 +88,18 @@
       background: var(--glass);
       backdrop-filter: blur(14px);
       border-radius: 22px;
-      padding: 35px;
+      padding: 30px;
       margin-bottom: 25px;
-      border: 1px solid rgba(255, 255, 255, 0.1);
     }
 
     .card h3 {
       color: var(--soft);
-      margin-bottom: 15px;
+      margin-bottom: 12px;
     }
 
     /* ===== SKILLS ===== */
     .skills span {
-      background: rgba(255,255,255,0.15);
+      background: rgba(255,255,255,0.25);
       padding: 8px 16px;
       border-radius: 20px;
       margin: 6px;
@@ -143,79 +107,107 @@
       font-size: 14px;
     }
 
+    /* ===== CONTACT ===== */
+    #contact p {
+      font-size: 16px;
+      margin: 10px 0;
+    }
+
+    #contact i {
+      color: var(--soft);
+      margin-right: 8px;
+    }
+
+    .contact-buttons {
+      margin-top: 20px;
+    }
+
+    .btn {
+      display: inline-block;
+      margin: 8px;
+      padding: 10px 22px;
+      border-radius: 25px;
+      background: var(--main);
+      color: #fff;
+      text-decoration: none;
+      font-size: 14px;
+      transition: 0.3s;
+    }
+
+    .btn:hover {
+      background: var(--soft);
+      color: #000;
+    }
   </style>
 </head>
+
 <body>
 
-<header class="hero">
-  <img src="fardous.jpeg" alt="Fardous Yousuf">
-  <h1>Fardous Yousuf</h1>
-  <p>Web Developer & University Student</p>
-</header>
+  <!-- HERO -->
+  <header class="hero">
+    <img src="https://i.imgur.com/6VBx3io.png" alt="Profile Image">
+    <h1>Fardous Yousuf</h1>
+    <p>Frontend Web Developer</p>
+  </header>
 
-<nav>
-  <a href="#about">About</a>
-  <a href="#skills">Skills</a>
-  <a href="#experience">Education</a>
-  <a href="#contact">Contact</a>
-</nav>
+  <!-- NAV -->
+  <nav>
+    <a href="#about">About</a>
+    <a href="#skills">Skills</a>
+    <a href="#experience">Experience</a>
+    <a href="#contact">Contact</a>
+  </nav>
 
-<main>
+  <!-- MAIN -->
+  <main>
+    <section>
 
-  <section>
-    <div class="card" id="about">
-      <h3>About Me</h3>
-      <p>
-        I am a passionate developer focused on building modern, responsive, and 
-        user-friendly websites. I enjoy learning new technologies and improving my coding skills.
-      </p>
-    </div>
-
-    <div class="card" id="skills">
-      <h3>Skills</h3>
-      <div class="skills">
-        <span>HTML5</span>
-        <span>CSS3</span>
-        <span>JavaScript</span>
-        <span>VS Code</span>
-        <span>GitHub</span>
-        <span>Vercel</span>
+      <div class="card" id="about">
+        <h3>About Me</h3>
+        <p>
+          I am Fardous Yousuf, a passionate frontend web developer.
+          I enjoy creating clean, responsive, and user-friendly websites
+          using modern web technologies.
+        </p>
       </div>
-    </div>
 
-    <div class="education-card">
-    <h3>University Student</h3>
-    <p>2026 - Present</p>
-    <p>Studying Computer Science at <strong>University of Hargeisa</strong></p>
-</div>
-<div class="social-media" style="text-align: center; margin-bottom: 20px;">
-    <a href="https://www.tiktok.com/@arliyo68" target="_blank" style="margin: 0 10px; text-decoration: none; color: white; font-size: 20px;">
-        📱 TikTok
-    </a>
-    <a href="https://github.com/fardousyousuf7-lab" target="_blank" style="margin: 0 10px; text-decoration: none; color: white; font-size: 20px;">
-        💻 GitHub
-    </a>
-</div>
-    <div class="card contact" id="contact">
-      <h3>Contact</h3>
-      <p>📍 Somaliland</p>
-      <p>💻 Check my projects on GitHub</p>
-    </div>
-  </section>
+      <div class="card" id="skills">
+        <h3>Skills</h3>
+        <div class="skills">
+          <span>HTML</span>
+          <span>CSS</span>
+          <span>JavaScript</span>
+          <span>Git & GitHub</span>
+          <span>Responsive Design</span>
+          <span>UI / UX Basics</span>
+        </div>
+      </div>
 
-</main>
+      <div class="card" id="experience">
+        <h3>Experience</h3>
+        <h4>Frontend Developer (Junior)</h4>
+        <small>2024 – Present</small>
+        <p>
+          Working on personal projects such as calculator apps,
+          task apps, and portfolio websites using HTML, CSS, and JavaScript.
+        </p>
+      </div>
 
-<footer>
-  <p style="text-align: center; padding-bottom: 40px; opacity: 0.6;">© 2026 Fardous Yousuf</p>
-</footer>
+      <div class="card" id="contact">
+        <h3>Contact</h3>
+
+        <p><i class="fa-solid fa-envelope"></i> fardousyousuf7@gmail.com</p>
+        <p><i class="fa-solid fa-phone"></i> 0636291488</p>
+        <p><i class="fa-solid fa-location-dot"></i> Hargeisa</p>
+
+        <div class="contact-buttons">
+          <a href="mailto:fardousyousuf7@gmail.com" class="btn">📧 Email Me</a>
+          <a href="tel:0636291488" class="btn">📞 Call Me</a>
+        </div>
+      </div>
+
+    </section>
+  </main>
 
 </body>
-
 </html>
-
-
-
-
-
-
-
