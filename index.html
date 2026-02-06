@@ -5,11 +5,11 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Fardous Yousuf | Portfolio</title>
   <style>
-    :root {
-  --main: #00d4ff;     
-  --soft: #a0a0a0;     
-  --dark: #000000;     
-  --glass: rgba(255, 255, 255, 0.05); 
+     :root {
+  --main: #2ecc71;     /* Cagaar iftiimaya */
+  --soft: #1db954;     /* Cagaar madow waxyar ka xiga */
+  --dark: #000000;     /* Madow dhab ah */
+  --glass: rgba(46, 204, 113, 0.1); 
 }
 
     * {
@@ -26,10 +26,17 @@
     min-height: 100vh;
     color: #fff;
     scroll-behavior: smooth;
-    /* Midabada madow iyo cagaarka is dhex yaacay */
-    background: linear-gradient(-45deg, #000000, #051a0b, #2ecc71, #000000);
+    /* Midabada Madow iyo Cagaarka is dhex yaacay */
+    background: linear-gradient(-45deg, #000000, #0a2a12, #2ecc71, #000000);
     background-size: 400% 400%;
-    animation: gradientMove 8s ease infinite;
+    animation: gradientMove 10s ease infinite;
+}
+
+/* Koodhka dhaqaajinaya midabada */
+@keyframes gradientMove {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
 }
 
 @keyframes gradientMove {
@@ -197,6 +204,7 @@
 </body>
 
 </html>
+
 
 
 
