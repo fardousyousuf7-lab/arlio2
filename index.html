@@ -8,6 +8,9 @@
   <!-- Font Awesome Icons -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 
+  <!-- AOS CSS -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" rel="stylesheet">
+
   <style>
     :root {
       --main: #6c5ce7;
@@ -139,6 +142,28 @@
       background: var(--soft);
       color: #000;
     }
+
+    /* ===== SOCIAL LINKS ===== */
+    .social {
+      display: inline-block;
+      margin: 8px 15px 0 0;
+      padding: 8px 16px;
+      border-radius: 25px;
+      background: var(--main);
+      color: #fff;
+      text-decoration: none;
+      font-size: 14px;
+      transition: 0.3s;
+    }
+
+    .social i {
+      margin-right: 8px;
+    }
+
+    .social:hover {
+      background: var(--soft);
+      color: #000;
+    }
   </style>
 </head>
 
@@ -165,7 +190,7 @@
     <section>
 
       <!-- ABOUT ME -->
-      <div class="card" id="about">
+      <div class="card" id="about" data-aos="fade-up">
         <h3>About Me</h3>
         <p>
           I am Fardous Yousuf, a passionate frontend web developer.
@@ -175,7 +200,7 @@
       </div>
 
       <!-- SKILLS -->
-      <div class="card" id="skills">
+      <div class="card" id="skills" data-aos="fade-up" data-aos-delay="100">
         <h3>Skills</h3>
         <div class="skills">
           <span>HTML</span>
@@ -188,10 +213,10 @@
       </div>
 
       <!-- EXPERIENCE -->
-      <div class="card" id="experience">
+      <div class="card" id="experience" data-aos="fade-up" data-aos-delay="200">
         <h3>Experience</h3>
         <h4>Frontend Developer (Junior)</h4>
-        <small>2024 – Present</small>
+        <small>2025 – Present</small>
         <p>
           Working on personal projects such as calculator apps,
           task apps, and portfolio websites using HTML, CSS, and JavaScript.
@@ -199,10 +224,10 @@
       </div>
 
       <!-- EDUCATION -->
-      <div class="card" id="education">
+      <div class="card" id="education" data-aos="fade-up" data-aos-delay="300">
         <h3>Education</h3>
         <h4>Hargeisa University</h4>
-        <small>2021 – Present</small>
+        <small>2025 – Present</small>
         <p>
           Pursuing a degree in [Your Major / Field]. Focused on developing
           skills in web development, programming, and digital design.
@@ -210,7 +235,7 @@
       </div>
 
       <!-- CONTACT -->
-      <div class="card" id="contact">
+      <div class="card" id="contact" data-aos="fade-up" data-aos-delay="400">
         <h3>Contact</h3>
 
         <p><i class="fa-solid fa-envelope"></i> fardousyousuf7@gmail.com</p>
@@ -223,8 +248,24 @@
         </div>
       </div>
 
+      <!-- SOCIAL LINKS -->
+      <div class="card" id="social" data-aos="fade-up" data-aos-delay="500">
+        <h3>Find Me Online</h3>
+        <a href="https://github.com/fardousyousuf7" target="_blank" class="social"><i class="fab fa-github"></i> GitHub</a>
+        <a href="https://www.linkedin.com/in/fardousyousuf7" target="_blank" class="social"><i class="fab fa-linkedin"></i> LinkedIn</a>
+      </div>
+
     </section>
   </main>
+
+  <!-- AOS JS -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+  <script>
+    AOS.init({
+      duration: 1000,
+      once: true
+    });
+  </script>
 
 </body>
 </html>
