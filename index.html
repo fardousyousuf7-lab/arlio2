@@ -19,45 +19,27 @@
       --glass: rgba(255, 255, 255, 0.18);
     }
 
-    * { box-sizing: border-box; }
+    * {
+      box-sizing: border-box;
+    }
 
     body {
       margin: 0;
       font-family: Arial, sans-serif;
+      background: linear-gradient(135deg, #0b1f2a, #07151d);
       min-height: 100vh;
       color: #fff;
-      overflow: hidden;
-      position: relative;
-    }
-
-    /* ===== NAVY BACKGROUND + SPARKLES ===== */
-    body::before {
-      content: '';
-      position: fixed;
-      top: 0; left: 0;
-      width: 200%; height: 200%;
-      background: #0b1f2a;
-      background: radial-gradient(circle, rgba(255,255,255,0.15) 1px, transparent 1px);
-      background-size: 50px 50px;
-      animation: moveParticles 20s linear infinite;
-      z-index: -1;
-    }
-
-    @keyframes moveParticles {
-      0% { transform: translate(0,0); }
-      100% { transform: translate(-50%, -50%); }
     }
 
     /* ===== HERO ===== */
     .hero {
       text-align: center;
       padding: 70px 20px 50px;
-      position: relative;
-      z-index: 1;
     }
 
     .hero img {
-      width: 160px; height: 160px;
+      width: 160px;
+      height: 160px;
       border-radius: 50%;
       border: 5px solid var(--soft);
       object-fit: cover;
@@ -65,8 +47,15 @@
       box-shadow: 0 0 25px rgba(162, 155, 254, 0.4);
     }
 
-    .hero h1 { font-size: 32px; margin-bottom: 8px; }
-    .hero p { opacity: 0.85; font-size: 18px; }
+    .hero h1 {
+      font-size: 32px;
+      margin-bottom: 8px;
+    }
+
+    .hero p {
+      opacity: 0.85;
+      font-size: 18px;
+    }
 
     /* ===== NAV ===== */
     nav {
@@ -78,13 +67,25 @@
       backdrop-filter: blur(14px);
       padding: 12px 30px;
       border-radius: 30px;
-      z-index: 1;
     }
-    nav a { color: #fff; text-decoration: none; margin: 0 10px; font-size: 15px; }
-    nav a:hover { color: var(--soft); }
+
+    nav a {
+      color: #fff;
+      text-decoration: none;
+      margin: 0 10px;
+      font-size: 15px;
+    }
+
+    nav a:hover {
+      color: var(--soft);
+    }
 
     /* ===== MAIN ===== */
-    main { max-width: 900px; margin: auto; padding: 0 25px 80px; position: relative; z-index: 1; }
+    main {
+      max-width: 900px;
+      margin: auto;
+      padding: 0 25px 80px;
+    }
 
     /* ===== CARDS ===== */
     .card {
@@ -93,10 +94,12 @@
       border-radius: 22px;
       padding: 30px;
       margin-bottom: 25px;
-      position: relative;
-      z-index: 1;
     }
-    .card h3 { color: var(--soft); margin-bottom: 12px; }
+
+    .card h3 {
+      color: var(--soft);
+      margin-bottom: 12px;
+    }
 
     /* ===== SKILLS ===== */
     .skills span {
@@ -106,19 +109,23 @@
       margin: 6px;
       display: inline-block;
       font-size: 14px;
-      transition: all 0.3s ease;
-    }
-    .skills span:hover {
-      background: var(--soft);
-      color: #000;
-      transform: translateY(-5px) scale(1.05);
-      cursor: default;
     }
 
     /* ===== CONTACT ===== */
-    #contact p { font-size: 16px; margin: 10px 0; }
-    #contact i { color: var(--soft); margin-right: 8px; }
-    .contact-buttons { margin-top: 20px; }
+    #contact p {
+      font-size: 16px;
+      margin: 10px 0;
+    }
+
+    #contact i {
+      color: var(--soft);
+      margin-right: 8px;
+    }
+
+    .contact-buttons {
+      margin-top: 20px;
+    }
+
     .btn {
       display: inline-block;
       margin: 8px;
@@ -128,9 +135,13 @@
       color: #fff;
       text-decoration: none;
       font-size: 14px;
-      transition: all 0.3s ease;
+      transition: 0.3s;
     }
-    .btn:hover { background: var(--soft); color: #000; transform: scale(1.1); }
+
+    .btn:hover {
+      background: var(--soft);
+      color: #000;
+    }
 
     /* ===== SOCIAL LINKS ===== */
     .social {
@@ -142,10 +153,17 @@
       color: #fff;
       text-decoration: none;
       font-size: 14px;
-      transition: all 0.3s ease;
+      transition: 0.3s;
     }
-    .social i { margin-right: 8px; }
-    .social:hover { background: var(--soft); color: #000; transform: scale(1.1); }
+
+    .social i {
+      margin-right: 8px;
+    }
+
+    .social:hover {
+      background: var(--soft);
+      color: #000;
+    }
   </style>
 </head>
 
